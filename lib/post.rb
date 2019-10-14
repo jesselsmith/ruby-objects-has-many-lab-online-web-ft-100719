@@ -4,7 +4,7 @@ class Post
 
   def initialize(title)
     self.title = title
-    save
+    self.save
   end
   def save
     @@all << self
