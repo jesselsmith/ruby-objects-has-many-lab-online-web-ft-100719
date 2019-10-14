@@ -26,7 +26,7 @@ class Author
     new_post.author = self
   end
 
-  def post_count
+  def self.post_count
     @@all.reduce(0) do |counter, author|
       counter += author.posts.length
       counter
