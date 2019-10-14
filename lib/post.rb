@@ -6,7 +6,7 @@ class Post
     self.title = title
     self.save
   end
-  
+
   def save
     @@all << self
   end
@@ -22,5 +22,5 @@ class Post
       nil
     end
   end
-  
+
 end
