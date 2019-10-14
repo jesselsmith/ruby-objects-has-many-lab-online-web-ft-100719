@@ -5,5 +5,5 @@ class Song
     self.title = title
     @@all <<  self
   end
-  
+
 end
