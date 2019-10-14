@@ -28,4 +28,5 @@ class Author
       counter += author.posts.length
       counter
     end
+  end
 end
