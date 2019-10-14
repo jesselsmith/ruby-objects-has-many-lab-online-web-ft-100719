@@ -8,7 +8,7 @@ class Author
   def save
     @@all << save
   end
-  def all
+  def self.all
     @@all
   end
   def posts
