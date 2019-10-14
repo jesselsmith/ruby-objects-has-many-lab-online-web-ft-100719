@@ -6,9 +6,11 @@ class Artist
     self.name = name
     save
   end
+
   def save
     @@all << self
   end
+
   def songs
     Song.all.select{|song| song.artist == self}
   end
@@ -21,9 +23,11 @@ class Artist
     new_song = Song.new(song_name)
     add_song(new_song)
   end
+
   def self.all
     @@all
   end
+
   def self.song_count
     @@all.reduce(0) do |counter, artist|
       counter += artist.songs.length
