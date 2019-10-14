@@ -21,6 +21,13 @@ class Artist
     new_song = Song.new(song_name)
     add_song(new_song)
   end
-
+  def all
+    @@all
+  end
   def self.song_count
+    @@all.reduce(0) do |counter, artist|
+      counter += artist.songs.length
+      counter
+    end
+  end
 end
